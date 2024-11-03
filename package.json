@@ -1,0 +1,29 @@
+{
+  "name": "stream-bounce",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "gulp && tsc && vite build",
+    "images": "rimraf dist/images && gulp images",
+    "code": "rimraf --glob \"dist/assets/*.js\" && tsc && vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/node": "^22.8.6",
+    "gulp": "^5.0.0",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-filelist": "^2.0.5",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
