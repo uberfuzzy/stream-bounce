@@ -22,5 +22,5 @@ dist
 *.sw?
 
 ##
-images/*
+#images/*
 !images/README.md
