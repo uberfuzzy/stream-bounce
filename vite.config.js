@@ -1,6 +1,6 @@
 export default {
   root: 'src',
-  base: "./",
+  base: "/stream-bounce/",
   build: {
     outDir: '../dist',
     rollupOptions: {
